@@ -5,17 +5,9 @@ aws_profile = "<%= config.aws.profile %>"
 aws_region  = "<%= config.aws.region %>"
 aws_vpc_id  = "<%= config.aws.vpc_id %>"
 
-<% if !config.aws.cidr_block_addr.empty? %>
 aws_cidr_block_addr  = "<%= config.aws.cidr_block_addr %>"
-<% end %>
-
-<% if !config.aws.private_custom_subnets.empty? %>
 private_custom_subnets = <%= config.aws.private_custom_subnets %>
-<% end %>
-
-<% if !config.aws.public_custom_subnets.empty? %>
 public_custom_subnets = <%= config.aws.public_custom_subnets %>
-<% end %>
 
 aws_tags    = {
         <%= config.aws.tags.map { |k,v| "#{k} = \"#{v}\"" }.join("\n\t") %>

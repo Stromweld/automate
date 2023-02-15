@@ -238,3 +238,13 @@ variable "aws_cidr_block_addr" {
 variable "aws_s3_bucketName" {
   default = "chef-automate-ha"
 }
+
+variable "private_custom_subnets" {
+  default = []
+  type    = list(string)
+}
+
+variable "public_custom_subnets" {
+  default = []
+  type    = list(string)
+}
