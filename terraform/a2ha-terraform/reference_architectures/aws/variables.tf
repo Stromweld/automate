@@ -77,6 +77,10 @@ variable "backup_config_s3" {
   default = "false"
 }
 
+variable "bucket_name" {
+  default = ""
+}
+
 variable "chef_ebs_volume_iops" {
   default = 100
 }
@@ -197,6 +201,22 @@ variable "private_custom_subnets" {
 variable "public_custom_subnets" {
   default = []
   type    = list(string)
+}
+
+variable "automate_private_ips" {
+  default = []
+}
+
+variable "chef_server_private_ips" {
+  default = []
+}
+
+variable "postgresql_private_ips" {
+  default = []
+}
+
+variable "opensearch_private_ips" {
+  default = []
 }
 
 variable "setup_managed_services" {
