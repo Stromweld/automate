@@ -43,7 +43,7 @@ type AutomteHAInfraDetails struct {
 		AutomateFrontendUrls struct {
 			Value string `json:"value"`
 			Type  string `json:"type"`
-		} `json:"automate_frontend_urls"`
+		} `json:"automate_frontend_url"`
 		AutomatePrivateIps struct {
 			Value []string `json:"value"`
 			Type  []string `json:"type"`

@@ -38,7 +38,7 @@ variable "automate_fqdn" {
   description = "Automate FQDN variable. Leave as an empty string for AWS"
 }
 
-variable "automate_frontend_urls" {
+variable "automate_frontend_url" {
   default     = ""
   description = "Automate FQDN variable. Leave as an empty string for AWS"
 }

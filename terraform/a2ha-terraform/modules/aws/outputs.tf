@@ -1,4 +1,4 @@
-output "automate_frontend_urls" {
+output "automate_frontend_url" {
   value = "https://${aws_alb.automate_lb.dns_name}"
 }
 

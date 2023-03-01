@@ -2,7 +2,7 @@ variable "automate_fqdn" {
   default = ""
 }
 
-variable "automate_frontend_urls" {
+variable "automate_frontend_url" {
   default = ""
 }
 

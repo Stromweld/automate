@@ -8,7 +8,7 @@ locals {
       os_snapshot_user_access_key_id = var.os_snapshot_user_access_key_id,
       os_snapshot_user_access_key_secret = var.os_snapshot_user_access_key_secret,
       automate_fqdn             = var.automate_fqdn
-      automate_frontend_urls    = var.automate_frontend_urls
+      automate_frontend_url    = var.automate_frontend_url
       bucket_name               = var.bucket_name
     })
 

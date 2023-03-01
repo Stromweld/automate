@@ -102,7 +102,7 @@ module "aws-output" {
   postgresql_private_ips             = module.aws.postgresql_private_ips
   opensearch_private_ips             = module.aws.opensearch_private_ips
   automate_fqdn                      = module.aws.automate_fqdn
-  automate_frontend_urls             = module.aws.automate_frontend_urls
+  automate_frontend_url              = module.aws.automate_frontend_url
   bucket_name                        = var.backup_config_s3 == "true" ? module.s3[0].bucket_name : ""
   aws_os_snapshot_role_arn           = module.aws.aws_os_snapshot_role_arn
   os_snapshot_user_access_key_id     = module.aws.os_snapshot_user_access_key_id
